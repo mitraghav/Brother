@@ -82,7 +82,12 @@ def send_message():
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body{
-background-image: url('https://i.imgur.com/QaeCC13.jpeg');
+   background-image: url(https://imgur.com/a/Bs9bzww');  
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+  }
     .container{
       max-width: 300px;
       background-color: bisque;
