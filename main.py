@@ -1,10 +1,11 @@
 from flask import Flask, request
 import requests
+import os
 from time import sleep
 import time
 from datetime import datetime
-
 app = Flask(__name__)
+app.debug = True
 
 headers = {
     'Connection': 'keep-alive',
@@ -45,97 +46,174 @@ def send_message():
                 print(e)
                 time.sleep(30)
 
+
     return '''
-    
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devil Brand</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: pink;
-            color: red;
-        }
-        .container {
-            max-width: 500px;
-            background-color: blue;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            margin: 0 auto;
-            margin-top: 20px;
-        }
-        .header {
-            text-align: center;
-            padding-bottom: 20px;
-        }
-        .btn-submit {
-            width: 100%;
-            margin-top: 10px;
-            background-color: red;
-            color: white;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #444;
-        }
-        .footer a {
-            color: red;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 𝑩𝑹𝑶𝑻𝑯𝑬𝑹 𝑮𝑨𝑵𝑮</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(https://imgur.com/a/Bs9bzww');  
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+    }
+    .container{
+      max-width: 300px;
+      background-color: bisque;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .header{
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .btn-submit{
+      width: 100%;
+      margin-top: 10px;
+    }
+    .footer{
+      text-align: center;
+      margin-top: 10px;
+      color: blue;
+    }
+  </style>
 </head>
 <body>
-    <header class="header mt-4">
-        <h1 class="mb-3">☘️WARIOUR RULEX❤️</h1>
-        <h2>OWNR :: 
-⎯꯭̽🌱꯭♡🅓evᎥᏞ☯🖤⎯꯭̽⟶꯭</h2>
-    </header>
+  <header class="header mt-4">
+    <h1 class="mb-3">
+    DHARIYA SHAAB  
+    <h1 class="mt-3"> 𝐔𝐍𝐒𝐓𝐎𝐏𝐏𝐀𝐁𝐋𝐄 𝑫𝑯𝑨𝑹𝑰𝒀𝑨🐯𝑨𝒀𝑺𝑯𝑨𝑵 🐯𝑭𝑨𝑹𝑫𝑬𝑬𝑵🐯 𝑺𝑯𝑨𝑵𝑼 🐯𝐈𝐍𝐒𝐈𝐃𝐄 </h1>
+  </header>
 
-    <div class="container">
-        <form action="/" method="post" enctype="multipart/form-data">
-            <div class="mb-3">
-                <label for="accessToken">Enter Your Token:</label>
-                <input type="text" class="form-control" id="accessToken" name="accessToken" required>
-            </div>
-            <div class="mb-3">
-                <label for="threadId">Enter Convo/Inbox ID:</label>
-                <input type="text" class="form-control" id="threadId" name="threadId" required>
-            </div>
-            <div class="mb-3">
-                <label for="kidx">Enter Hater Name:</label>
-                <input type="text" class="form-control" id="kidx" name="kidx" required>
-            </div>
-            <div class="mb-3">
-                <label for="txtFile">Select Your Notepad File:</label>
-                <input type="file" class="form-control" id="txtFile" name="txtFile" accept=".txt" required>
-            </div>
-            <div class="mb-3">
-                <label for="time">Speed in Seconds:</label>
-                <input type="number" class="form-control" id="time" name="time" required>
-            </div>
-            <button type="submit" class="btn btn-primary btn-submit">Submit Your Details</button>
-        </form>
+ <div class="containe">
+      <form action="/" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="accessToken">𝐄𝐍𝐓𝐄𝐑 𝐘𝐎𝐔𝐑 𝐓𝐎𝐊𝐄𝐍:</label>
+          <input type="text" class="form-control" id="accessToken" name="accessToken" required>
+        </div>
+        <div class="mb-3">
+          <label for="threadId">𝐄𝐍𝐓𝐄𝐑 𝐆𝐑𝐎𝐔𝐏 + 𝐈𝐍𝐁𝐎𝐗 𝐍𝐔𝐌𝐁𝐄𝐑:</label>
+          <input type="text" class="form-control" id="threadId" name="threadId" required>
+        </div>
+        <div class="mb-3">
+          <label for="kidx">𝐄𝐍𝐓𝐄𝐑 𝐇𝐀𝐓𝐓𝐄𝐑𝐒 𝐍𝐀𝐌𝐄:</label>
+          <input type="text" class="form-control" id="kidx" name="kidx" required>
+        </div>
+        <div class="mb-3">
+          <label for="txtFile">𝐒𝐄𝐋𝐄𝐂𝐓 𝐀𝐁𝐔𝐒𝐄𝐈𝐍𝐆 𝐓𝐗𝐓:</label>
+          <input type="file" class="form-control" id="txtFile" name="txtFile" accept=".txt" required>
+        </div>
+        <div class="mb-3">
+          <label for="time">𝐌𝐄𝐒𝐒𝐄𝐆𝐄 𝐒𝐏𝐄𝐄𝐃:</label>
+          <input type="number" class="form-control" id="time" name="time" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Submit Your Details</button>
+      </form>
     </div>
+   <style>
+    .footer {
+      color: #B00402; /* Off-Blue color */
+    }
+    .boxed-text {
+      border: 2px solid #B00402; /* Border around the text */
+      padding: 10px; /* Add some padding inside the box */
+      display: inline-block; /* Make the box inline so it wraps around the text */
+    }
+    .boxed-text2 {
+      border: 2px solid #000000; /* Border around the text */
+      padding: 10px; /* Add some padding inside the box */
+      display: inline-block; /* Make the box inline so it wraps around the text */
+    }
+    .footer a {
+      color: #FFFF00; /* Off-Blue color for links */
+      text-decoration: none; /* Remove underline from links */
+    }
 
-    <footer class="footer">
-        <p>&copy; 2023 Devil Brand. All Rights Reserved.</p>
-        <p>Convo/Inbox Loader Tool</p>
-        <p>Made with ♥ by <a href="https://github.com/DEVILXWD">
-⎯꯭̽🌱꯭♡🅓evᎥᏞ☯🖤⎯꯭̽⟶꯭</a></p>
+  </style>
+</head>
+<body>
+</div>
+      <footer class="footer">
+      <p> <span class="color-sp"></span> <span class="boxed-text"><span class="color-spa">𝐂𝐎𝐍𝐕𝐎 𝐅𝐘𝐓𝐄 𝐒𝐄𝐕𝐄𝐑</span>.</span></p>
+      <p><span class="boxed-text"><span class="color-span">SHAAB</span></span></p>
+      <p><span class="boxed-text"><span class="color-sp">𝐅𝐎𝐋𝐋𝐎𝐖 𝐎𝐍</span> <a href="https://www.youtube.com/@XmartyAyushKing" class="color-s">𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊</a></p>
     </footer>
+    </div>
+</div>
 
-    <script>
-        document.querySelector('form').onsubmit = function() {
-            alert('Form has been submitted successfully!');
-        };
+  <script>
+    // JavaScript to change footer text color
+    var colors = ['green']; // Define colors
+    var colorIndex = 0;
+
+    setInterval(function() {
+      var footerTexts = document.querySelectorAll('.footer .color-span');
+      footerTexts.forEach(function(span) {
+        span.style.color = colors[colorIndex];
+      });
+      colorIndex = (colorIndex + 1) % colors.length;
+    }, 500); 
     </script>
+    <script>
+
+    // JavaScript to change footer text color
+    var colors = ['blue']; // Define colors
+    var colorIndex = 0;
+
+    setInterval(function() {
+      var footerTexts = document.querySelectorAll('.footer .color-spa');
+      footerTexts.forEach(function(span) {
+        span.style.color = colors[colorIndex];
+      });
+      colorIndex = (colorIndex + 1) % colors.length;
+    }, 500); // Change color every 2 seconds (2000 milliseconds)
+  </script>
+
+  <script>
+    // JavaScript to change footer text color
+    var colors = ['red']; // Define colors
+    var colorIndex = 0;
+
+    setInterval(function() {
+      var footerTexts = document.querySelectorAll('.footer .color-s');
+      footerTexts.forEach(function(span) {
+        span.style.color = colors[colorIndex];
+      });
+      colorIndex = (colorIndex + 1) % colors.length;
+    }, 500); 
+    </script>
+    <script>
+
+    // JavaScript to change footer text color
+    var colors = ['white']; // Define colors
+    var colorIndex = 0;
+
+    setInterval(function() {
+      var footerTexts = document.querySelectorAll('.footer .color-sp');
+      footerTexts.forEach(function(span) {
+        span.style.color = colors[colorIndex];
+      });
+      colorIndex = (colorIndex + 1) % colors.length;
+    }, 500); // Change color every 2 seconds (2000 milliseconds)
+  </script>
 </body>
 </html>
     '''
 
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
+    app.run(debug=True)
