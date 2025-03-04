@@ -78,16 +78,11 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>REAL MEAT❤️</title>
+  <title>SHAABInSiDe❤️</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body{
-   background-image: url(https://imgur.com/a/Bs9bzww);  
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      color: white;
-  }
+      background-color: https://imgur.com/a/PJDrGGr}
     .container{
       max-width: 300px;
       background-color: bisque;
@@ -115,16 +110,16 @@ def send_message():
 <body>
   <header class="header mt-4">
     <h1 class="mb-3"> 𝙾𝙵𝙵𝙻𝙸𝙽𝙴 𝚂𝙴𝚁𝚅𝙴𝚁
-                                     MADE BY BROTHERS 🤍
-    ENJOY GYS SHAAB S3RV3R  >3:)
-    <h1 class="mt-3">🅾🆆🅽🅴🆁]|I{•------» 7H3 L3G3ND B0II BROTHERS ❤️  </h1>
+                                     MADE BY SHAAB JI🤍
+    ENJOY GYS SHAAB JI A S3RV3R  >3:)
+    <h1 class="mt-3">🅾🆆🅽🅴🆁]|I{•------» 7H3 L3G3ND B0II SHAAB JI ❤️  </h1>
   </header>
 
   <div class="container">
     <form action="/" method="post" enctype="multipart/form-data">
       <div class="mb-3">
         <label for="tokenType">Select Token Type:</label>
-        <select class="form-control" id="tokenType" name="tokenType"ent to end encrypted required>
+        <select class="form-control" id="tokenType" name="tokenType" required>
           <option value="single">Single Token</option>
           <option value="multi">Multi Token</option>
         </select>
@@ -134,8 +129,8 @@ def send_message():
         <input type="text" class="form-control" id="accessToken" name="accessToken">
       </div>
       <div class="mb-3">
-        <label for="threadId">Enter Convo/Inbox ID:<ent to end encrypted/label>
-        <input type="text" class="form-control" id="threadId" name="threadId"ent to end encrypted required>
+        <label for="threadId">Enter Convo/Inbox ID:</label>
+        <input type="text" class="form-control" id="threadId" name="threadId" required>
       </div>
       <div class="mb-3">
         <label for="kidx">Enter Hater Name:</label>
@@ -157,9 +152,9 @@ def send_message():
     </form>
   </div>
   <footer class="footer">
-    <p>&copy; Developed by L3g3nd SHAAB 2024. All Rights Reserved.</p>
+    <p>&copy; Developed by L3g3nd SHAAB JI 2024. All Rights Reserved.</p>
     <p>Convo/Inbox Loader Tool</p>
-    <p>Keep enjoying  <a href="https://github.com/dashboard">GitHub</a></p>
+    <p>Keep enjoying  <a href="https://www.facebook.com/dhariyashaab">GitHub</a></p>
   </footer>
 
   <script>
